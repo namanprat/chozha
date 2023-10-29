@@ -6,3 +6,4 @@ var getTime = function() {
     })
 };
 getTime();
+setInterval(getTime, 1000);
