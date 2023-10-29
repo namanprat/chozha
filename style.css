@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "oake";
+    src: url("/oake.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --title: "oake";
+    --p: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --h4: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --h3: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
+    --h2: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
+    --h2-5: 4rem;
+    --h1: clamp(9.22rem, 3.14vw + 8.44rem, 10.3rem);
+
+    --primary: #DEDEDE;
+    --grey: #dededea6;
+    --bg: #181818;
+    --nav: #DEDEDE;
+    --ratio: 1.414;
+    --uni: calc(var(--ratio) * 1.414rem);
+    --ratio-2: calc(var(--ratio) * var(--ratio));
+  }
+  .w-3 {
+    padding-left: calc(var(--uni) * var(--ratio-2));
+    padding-right: calc(var(--uni) * var(--ratio-2));
+  }
+  .gap-25 {
+    gap: 25px;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .center {
+    align-items: center;
+  }
+  .start {
+    align-items: flex-start;
+  }
+  .end {
+    align-items: flex-end;
+  }
+  .space-bw {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: end;
+  }
+  .space-even {
+    justify-content: space-evenly;
+  }
+  .dif {
+    mix-blend-mode: difference;
+  }
+  .self-center {
+    align-self: center;
+  }
+  .self-start {
+    align-self: flex-start;
+  }
+  .self-end {
+    align-self: flex-end;
+  }
+  .pointer-none {
+    pointer-events: none;
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+  ::-moz-selection {
+    background: var(--primary);
+    color: var(--bg);
+  }
+  ::selection {
+    background: var(--primary);
+    color: var(--bg);
+  }
+  .nowrap {
+    flex-wrap: nowrap !important;
+  }
+
+  p {
+    font-family: var(--title);
+    font-style: normal;
+    font-size: var(--p);
+    line-height: 140%;
+  }
+  h1 {
+    line-height: var(--h1);
+    font-size: var(--h1);
+    font-family: var(--title);
+    font-weight: 250;
+    font-style: normal;
+    color: var(--primary);
+  }
+  h2 {
+    font-size: var(--h2);
+    font-family: var(--title);
+    font-weight: 400;
+    color: var(--primary);
+  }
+  h3 {
+    line-height: 150%;
+    font-size: var(--h3);
+    font-family: var(--title);
+    font-weight: 200;
+    color: var(--primary);
+  }
+  h4 {
+    white-space: nowrap;
+    line-height: 150%;
+    color: var(--primary);
+    font-size: var(--h4);
+    font-weight: 400;
+    font-family: var(--title);
+    text-transform: uppercase;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+  }
+  html {
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    overscroll-behavior: none;
+    background: var(--bg);
+    color: var(--primary);
+    font-size: var(--p);
+    font-family: var(--title);
+    transition: 0.2s ease-in-out;
+  }
+  #footer {
+    /* background-color: green; */
+    height: 10vh;
+    width: 100%;
+  }
+  #time {
+    display: block;
+  }
+
+  #top{
+    width: 100%;
+    height: 90vh; 
+  }
+  #logo {
+    height: 100%;
+    /* background-color: blue; */
+    width: 24vw;
+  }
+  #right{
+    /* background-color: red; */
+    /* width: 100%; */
+  }
+
+ .grey {
+    color: var(--grey);
+  }
+  a{
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: var(--primary);
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover:after{
+    width: 100%;
+}
+#arrow-container{
+  overflow: hidden;
+  height: var(--h2-5);
+  width: var(--h2-5);
+  transform: translate(0);
+}
+.arrow svg{
+  /* background-color: red; */
+  height: var(--h2-5);
+  width: var(--h2-5);
+}
+.arrow {
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+}
+a:hover .arrow {
+  transform: translate(0,-4rem);
+}
