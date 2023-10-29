@@ -264,10 +264,6 @@ a:hover .arrow {
   :root {
     --h1: clamp(4.61rem, 1.57vw + 4.35rem, 5.48rem);
   }
-  .w-3 {
-    padding-left: calc(var(--uni) * var(--ratio));
-    padding-right: calc(var(--uni) * var(--ratio));
-  }
 }
 @media (max-width: 517px) {
   :root {
