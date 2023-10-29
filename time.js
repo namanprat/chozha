@@ -1,6 +1,6 @@
 var getTime = function() {
     document.getElementById("time").innerHTML = new Date().toLocaleString("en-AU", {
-        timeZone: 'Australia/Sydney',
+        timeZone: 'Australia/Brisbane',
         timeStyle: 'long',
         hourCycle: 'h24'
     })
