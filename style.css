@@ -145,7 +145,8 @@
     scroll-behavior: smooth;
   }
   body {
-    width: 100vw;
+    overflow: hidden !important;
+    width: 100%;
     height: 100vh;
     overscroll-behavior: none;
     background: var(--bg);
