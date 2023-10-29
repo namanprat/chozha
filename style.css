@@ -267,3 +267,15 @@ a:hover .arrow {
     padding-right: calc(var(--uni) * 0.65);
   }
 }
+@media (max-width: 425px) {
+  :root {
+    --h1: clamp(3.5rem, 2.5vw + 3.25rem, 4.25rem);
+    --h2: clamp(1.2rem, 0.55vw + 1.53rem, 2rem);
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --h1: clamp(3.25rem, 2.25vw + 3.2rem, 4.2rem);
+    --h2: clamp(1.1rem, 0.5vw + 1.5rem, 2rem);
+  }
+}
