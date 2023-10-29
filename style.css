@@ -1,6 +1,6 @@
 @font-face {
     font-family: "oake";
-    src: url("/oake.woff") format("woff");
+    src: url("./oake.woff") format("woff");
     font-style: normal;
     font-display: swap;
   }
