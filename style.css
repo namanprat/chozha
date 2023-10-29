@@ -169,14 +169,8 @@
   }
   #logo {
     height: 100%;
-    /* background-color: blue; */
     width: 24vw;
   }
-  #right{
-    /* background-color: red; */
-    /* width: 100%; */
-  }
-
  .grey {
     color: var(--grey);
   }
@@ -249,7 +243,6 @@ a:hover .arrow {
     margin-top: 10vh;
   }
 }
-
 @media (max-width: 684px) {
   :root {
     --h1: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
