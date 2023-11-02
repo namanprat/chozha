@@ -12,7 +12,7 @@
     --h3: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
     --h2: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
     --h2-5: 4rem;
-    --h1: clamp(9rem, 3vw + 8rem, 10rem);
+    --h1: clamp(8rem, 2vw + 7rem, 10rem);
 
     --primary: #DEDEDE;
     --grey: #dededea6;
