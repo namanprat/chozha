@@ -229,13 +229,6 @@ a:hover .arrow {
     padding-left: calc(var(--uni) * var(--ratio));
     padding-right: calc(var(--uni) * var(--ratio));
   }
-}
-@media (max-width: 768px) {
-  :root {
-    --h1: clamp(5rem, 1.7vw + 5rem, 6.3rem);
-    --h2-5: 2.75rem;
-    --h2: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
-  }
   #top {
     /* height: 100%; */
     flex-direction: column;
@@ -244,10 +237,19 @@ a:hover .arrow {
   #logo {
     margin-top: 3vh;
     height: auto;
+    width: 20vw;
   }
   #cta {
     margin-top: 10vh;
   }
+}
+@media (max-width: 768px) {
+  :root {
+    --h1: clamp(5rem, 1.7vw + 5rem, 6.3rem);
+    --h2-5: 2.75rem;
+    --h2: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
+  }
+
 }
 @media (max-width: 684px) {
   :root {
@@ -258,11 +260,15 @@ a:hover .arrow {
   :root {
     --h1: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
   }
+  #logo {
+    width: 40vw;
+  }
 }
 @media (max-width: 550px) {
   :root {
     --h1: clamp(4.61rem, 1.57vw + 4.35rem, 5.48rem);
   }
+
 }
 @media (max-width: 517px) {
   :root {
@@ -272,6 +278,7 @@ a:hover .arrow {
     padding-left: calc(var(--uni) * 0.65);
     padding-right: calc(var(--uni) * 0.65);
   }
+
 }
 @media (max-width: 425px) {
   :root {
